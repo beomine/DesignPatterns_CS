@@ -17,8 +17,8 @@
 
     public void Update()
     {
-        _temperature = _weatherData.GetTemperature();
-        _humidity = _weatherData.GetHumidity();
+        _temperature = _weatherData.Temperature;
+        _humidity = _weatherData.Humidity;
         Display();
     }
 }

@@ -21,7 +21,7 @@
     public void Update()
     {
         // _weatherData.GetPresure();
-        var temp = _weatherData.GetTemperature();
+        var temp = _weatherData.Temperature;
         _tempSum += temp;
         _numReadings++;
 

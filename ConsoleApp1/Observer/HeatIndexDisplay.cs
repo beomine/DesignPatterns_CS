@@ -10,7 +10,7 @@
 
     public void Update()
     {
-        _heatIndex = ComputeHeatIndex(_weatherData.GetTemperature(), _weatherData.GetHumidity());
+        _heatIndex = ComputeHeatIndex(_weatherData.Temperature, _weatherData.Humidity);
         Display();
     }
 

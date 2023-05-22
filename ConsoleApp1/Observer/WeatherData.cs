@@ -1,24 +1,10 @@
 ﻿public class WeatherData : ISubject
 {
-    private List<IObserver> _observers;
-    private float _temperature;
-    private float _humidity;
-    private float _pressure;
+    private readonly List<IObserver> _observers = new List<IObserver>();
 
-    public float GetTemperature()
-    {
-        return _temperature;
-    }
-
-    public float GetHumidity()
-    {
-        return _humidity;
-    }
-
-    public float GetPresure()
-    {
-        return _pressure;
-    }
+    public float Temperature { get; set; }
+    public float Humidity { get; set; }
+    public float Pressure { get; set; }
 
     public void MeasurementsChanged()
     {
@@ -37,24 +23,14 @@
 
     public void NotifyObserver()
     {
-        foreach (var item in _observers)
-        {
-            item.Update();
-        }
+        _observers.ForEach(item => item.Update());
     }
 
     public void SetMeasurements(float temp, float humidity, float pressure)
     {
-        _temperature = temp;
-        _humidity = humidity;
-        _pressure = pressure;
+        Temperature = temp;
+        Humidity = humidity;
+        Pressure = pressure;
         MeasurementsChanged();
     }
-
-    public WeatherData()
-    {
-        _observers = new List<IObserver>();
-    }
 }
-
-

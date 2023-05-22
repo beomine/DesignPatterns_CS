@@ -6,6 +6,6 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 
-//Observer.Instance.Perform();
+Observer.Instance.Perform();
 
-Decorator.Instance.Perform();
+//Decorator.Instance.Perform();

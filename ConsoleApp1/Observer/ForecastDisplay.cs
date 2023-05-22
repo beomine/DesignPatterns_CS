@@ -30,7 +30,7 @@
     public void Update()
     {
         _lastPressure = _currentPressure;
-        _currentPressure = _weatherData.GetPresure();
+        _currentPressure = _weatherData.Pressure;
         Display();
     }
 }
