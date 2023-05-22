@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-public class Espresso : Beverage
+﻿public class Espresso : Beverage
 {
     public Espresso()
     {

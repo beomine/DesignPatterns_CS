@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-public class Decaf : Beverage
+﻿public class Decaf : Beverage
 {
     public Decaf()
     {

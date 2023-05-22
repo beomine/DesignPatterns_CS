@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-public interface IObserver
+﻿public interface IObserver
 {
     void Update();
 }

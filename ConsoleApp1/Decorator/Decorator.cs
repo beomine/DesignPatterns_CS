@@ -1,48 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ConsoleApp1.Decorator;
 
-namespace ConsoleApp1.Decorator
+internal class Decorator
 {
-    internal class Decorator
+    private static readonly Lazy<Decorator> lazy = new(() => new Decorator());
+    public static Decorator Instance
     {
-        private static readonly Lazy<Decorator> lazy = new(() => new Decorator());
-        public static Decorator Instance
+        get
         {
-            get
-            {
-                return lazy.Value;
-            }
+            return lazy.Value;
         }
+    }
 
-        private Decorator()
+    private Decorator()
+    {
+
+    }
+
+    public void Perform()
+    {
+        Beverage beverage1 = new Espresso();
+
+        beverage1.BevSize = Beverage.Size.GRANDE;
+
+        print(beverage1);
+
+        beverage1 = new Mocha(beverage1);
+        print(beverage1);
+
+        beverage1 = new Whip(beverage1);
+        print(beverage1);
+
+        void print(Beverage beverage)
         {
-
-        }
-
-        public void Perform()
-        {
-            Beverage beverage1 = new Espresso();
-
-            beverage1.BevSize = Beverage.Size.GRANDE;
-
-            print(beverage1);
-
-            beverage1 = new Mocha(beverage1);
-            print(beverage1);
-
-            beverage1 = new Whip(beverage1);
-            print(beverage1);
-
-            void print(Beverage beverage)
-            {
-                var cost = beverage.Cost();
-                var description = beverage.GetDescription();
-                Console.WriteLine(description);
-                Console.WriteLine(cost);
-            }
+            var cost = beverage.Cost();
+            var description = beverage.GetDescription();
+            Console.WriteLine(description);
+            Console.WriteLine(cost);
         }
     }
 }

@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-using ConsoleApp1.Decorator;
+﻿using ConsoleApp1.Decorator;
 using ConsoleApp1.Observer;
 using System.Collections.Concurrent;
 using System.Collections.ObjectModel;

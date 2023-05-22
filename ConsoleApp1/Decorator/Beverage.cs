@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-public abstract class Beverage
+﻿public abstract class Beverage
 {
     public string Description = string.Empty;
     public enum Size { TALL, GRANDE,VENTI}

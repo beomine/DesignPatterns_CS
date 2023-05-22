@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-public class HeatIndexDisplay : IObserver, IDisplay
+﻿public class HeatIndexDisplay : IObserver, IDisplay
 {
     private WeatherData _weatherData;
     private float _heatIndex = 0.0f;

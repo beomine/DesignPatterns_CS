@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-public class CurrentConditionsDisplay : IObserver,IDisplay
+﻿public class CurrentConditionsDisplay : IObserver,IDisplay
 {
     private float _temperature;
     private float _humidity;

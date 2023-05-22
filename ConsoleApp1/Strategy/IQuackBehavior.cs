@@ -1,9 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-
-
-public interface IQuackBehavior
+﻿public interface IQuackBehavior
 {
     void Quack();
 }

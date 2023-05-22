@@ -1,9 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-
-
-public class QuackNormal : IQuackBehavior
+﻿public class QuackNormal : IQuackBehavior
 {
     public void Quack()
     {

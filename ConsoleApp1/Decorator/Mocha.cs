@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-public class Mocha : CondimentDecorator
+﻿public class Mocha : CondimentDecorator
 {
     public Mocha(Beverage beverage)
     {

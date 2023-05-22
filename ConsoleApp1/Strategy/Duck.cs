@@ -1,12 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-
-
-public abstract class Duck
+﻿public abstract class Duck
 {
-    internal IFlyBehavior flyBehavior;
-    internal IQuackBehavior quackBehavior;
+    internal IFlyBehavior flyBehavior = null!;
+    internal IQuackBehavior quackBehavior = null!;
     public void Swim()
     {
         Console.WriteLine("SWIM");

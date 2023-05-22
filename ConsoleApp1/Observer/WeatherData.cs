@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-public class WeatherData : ISubject
+﻿public class WeatherData : ISubject
 {
     private List<IObserver> _observers;
     private float _temperature;

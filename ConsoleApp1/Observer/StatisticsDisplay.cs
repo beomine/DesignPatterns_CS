@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-public class StatisticsDisplay : IObserver, IDisplay
+﻿public class StatisticsDisplay : IObserver, IDisplay
 {
     private float _maxTemp = 0.0f;
     private float _minTemp = 200;

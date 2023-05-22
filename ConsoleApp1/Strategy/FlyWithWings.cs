@@ -1,9 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-
-
-public class FlyWithWings : IFlyBehavior
+﻿public class FlyWithWings : IFlyBehavior
 {
     public void Fly()
     {

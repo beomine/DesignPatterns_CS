@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-public class Milk : CondimentDecorator
+﻿public class Milk : CondimentDecorator
 {
     public Milk(Beverage beverage)
     {

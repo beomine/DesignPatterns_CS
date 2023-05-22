@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-public class ForecastDisplay : IObserver, IDisplay
+﻿public class ForecastDisplay : IObserver, IDisplay
 {
     private float _currentPressure = 29.92f;
     private float _lastPressure;
